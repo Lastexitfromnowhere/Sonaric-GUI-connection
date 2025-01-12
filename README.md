@@ -1,35 +1,81 @@
-﻿# Sonaric Tunnel Manager
-Overview
-Sonaric Tunnel Manager is a sleek, modern SSH tunneling application built with WPF and .NET, designed to simplify network port forwarding and remote server connections.
-Key Features
+# 🌐 Sonaric GUI connection 
 
-Intuitive Dark-Themed UI
-Secure SSH Connection Management
-Automatic Port Tunneling
-One-Click Connection/Disconnection
-Dynamic Port Forwarding (44003-44006)
-Integrated Terminal Logging
+## 🚀 Overview
 
-Technical Highlights
+Sonaric Sonaric GUI connection is a powerful, user-friendly SSH tunneling application designed to simplify network connections and port forwarding.
 
-Developed using C# and .NET
-Utilizes SSH.NET for robust SSH connectivity
-Supports password-based authentication
-Automatically opens a predefined local endpoint (localhost:44004)
-Comprehensive error handling and user feedback
+## ✨ Key Features
 
-User Experience
+- 🔒 Secure SSH Connections
+- 🖥️ Intuitive Dark-Themed UI
+- 🔀 Dynamic Port Tunneling
+- 📡 One-Click Connection Management
+- 📝 Real-Time Terminal Logging
 
-Minimalist design with dark color scheme
-Easy-to-use connection form
-Real-time terminal logging
-Quick access to social media links (GitHub, Twitter)
+## 🛠️ Technical Specifications
 
-Usage
+- **Language**: C# 
+- **Framework**: .NET 8.0 WPF
+- **SSH Library**: SSH.NET
+- **Supported Platforms**: Windows
 
-Enter server host, username, and password
-Click "Connect"
-Automatically tunnels specified ports
-Launches default service endpoint
+## 🖼️ Application Screenshots
 
-Ideal for developers, system administrators, and network professionals seeking a straightforward SSH tunneling solution.
+*Screenshots will be added soon*
+
+## 🚦 Quick Start
+
+### Prerequisites
+- Windows 10/11
+- .NET 8.0 Runtime
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/Lastexitfromnowhere/TunnelManager.git
+```
+
+2. Navigate to the project directory
+```bash
+cd TunnelManager
+```
+
+3. Build the application
+```bash
+dotnet build
+```
+
+4. Run the executable
+```bash
+dotnet run
+```
+
+## 🔧 Configuration
+
+- Enter SSH server details
+- Select ports to tunnel
+- Connect with a single click
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 📞 Contact
+
+- GitHub: [@Lastexitfromnowhere](https://github.com/Lastexitfromnowhere)
+- Twitter: [@brand_exit](https://x.com/brand_exit)
+
+---
+
+**Made with ❤️ by a fan **
