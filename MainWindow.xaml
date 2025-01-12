@@ -1,18 +1,18 @@
-﻿<Window x:Class="TunnelManager.MainWindow"
+<Window x:Class="TunnelManager.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Sonaric Tunnel Manager" Height="600" Width="800"
-        Background="#FF121212"
+        Background="#FF0A1116"
         WindowStyle="None"
         ResizeMode="CanResize"
-        BorderThickness="1"
+        BorderThickness="0.5"
         BorderBrush="#FF333333">
     
     <Window.Resources>
-        <!-- Style pour les boutons sociaux -->
+        <!-- Style for social buttons -->
         <Style x:Key="SocialButton" TargetType="Button">
             <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="Foreground" Value="#FF00FFB3"/>
+            <Setter Property="Foreground" Value="#FF10C5A4"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Padding" Value="10,5"/>
             <Setter Property="Cursor" Value="Hand"/>
@@ -37,35 +37,35 @@
         </Grid.RowDefinitions>
 
         <!-- Title Bar -->
-        <Grid Background="#FF1A1A1A" MouseLeftButtonDown="DragWindow">
+        <Grid Background="#FF0A1116" MouseLeftButtonDown="DragWindow">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <!-- Logo et titre -->
+            <!-- Logo and title -->
             <StackPanel Orientation="Horizontal" Margin="20,0">
                 <Image Source="/Assets/logo.png" Width="30" Height="30" RenderOptions.BitmapScalingMode="HighQuality"/>
-                <TextBlock Text="Sonaric Network" 
-                          Foreground="#FF00FFB3" 
+                <TextBlock Text="Sonaric GUI Connection" 
+                          Foreground="#FF10C5A4" 
                           FontSize="24" 
                           Margin="10,0,0,0"
                           VerticalAlignment="Center"/>
             </StackPanel>
 
-            <!-- Boutons sociaux -->
+            <!-- Social buttons -->
             <StackPanel Grid.Column="2" Orientation="Horizontal" Margin="20,0">
                 <Button Style="{StaticResource SocialButton}" 
                         Click="GithubButton_Click"
                         ToolTip="Github">
-                    <TextBlock Text="GitHub" Foreground="#FF00FFB3"/>
+                    <TextBlock Text="GitHub" Foreground="#FF10C5A4"/>
                 </Button>
                 <Button Style="{StaticResource SocialButton}" 
                         Click="TwitterButton_Click"
                         Margin="10,0,0,0"
                         ToolTip="Twitter">
-                    <TextBlock Text="Twitter" Foreground="#FF00FFB3"/>
+                    <TextBlock Text="Twitter" Foreground="#FF10C5A4"/>
                 </Button>
                 <!-- Window Control Buttons -->
                 <Button Content="—" Click="MinimizeButton_Click" 
@@ -90,57 +90,66 @@
             </Grid.ColumnDefinitions>
 
             <!-- Connection Form -->
-            <Border Background="#FF1A1A1A" CornerRadius="8">
+            <Border Background="#FF0A1116" 
+                    CornerRadius="8"
+                    BorderBrush="#FF10C5A4" 
+                    BorderThickness="0.5">
                 <StackPanel Margin="20">
-                    <TextBlock Text="Configuration SSH" 
+                    <TextBlock Text="SSH Configuration" 
                              Foreground="White" 
                              FontSize="20" 
                              Margin="0,0,0,20"/>
                     
-                    <TextBlock Text="Adresse du serveur:" 
+                    <TextBlock Text="Server Address:" 
                              Foreground="Gray" 
                              Margin="0,5"/>
                     <TextBox x:Name="hostTextBox" 
-                            Background="#FF262626" 
+                            Background="#FF0A1116" 
                             Foreground="White"
-                            BorderThickness="0"
+                            BorderThickness="0.5"
+                            BorderBrush="#FF10C5A4"
                             Padding="5"
                             Height="30"/>
                     
-                    <TextBlock Text="Nom d'utilisateur:" 
+                    <TextBlock Text="Username:" 
                              Foreground="Gray" 
                              Margin="0,10,0,5"/>
                     <TextBox x:Name="usernameTextBox" 
-                            Background="#FF262626" 
+                            Background="#FF0A1116" 
                             Foreground="White"
-                            BorderThickness="0"
+                            BorderThickness="0.5"
+                            BorderBrush="#FF10C5A4"
                             Padding="5"
                             Height="30"/>
                     
-                    <TextBlock Text="Mot de passe:" 
+                    <TextBlock Text="Password:" 
                              Foreground="Gray" 
                              Margin="0,10,0,5"/>
                     <PasswordBox x:Name="passwordBox" 
-                               Background="#FF262626"
-                               BorderThickness="0"
+                               Background="#FF0A1116"
+                               BorderThickness="0.5"
+                               BorderBrush="#FF10C5A4"
                                Padding="5"
                                Height="30"/>
                     
                     <Button x:Name="ConnectButton"
-                            Content="Se connecter" 
+                            Content="Connect" 
                             Click="ConnectButton_Click"
-                            Background="#FF00FFB3" 
+                            Background="#FFea580c" 
                             Foreground="Black"
-                            BorderThickness="0"
+                            BorderThickness="0.5"
                             Height="35" 
-                            Margin="0,20,0,0"/>
+                            Margin="0,20,0,0"
+                            Cursor="Hand"/>
                 </StackPanel>
             </Border>
 
             <!-- Terminal -->
             <Border Grid.Column="2" 
-                    Background="#FF1A1A1A" 
-                    CornerRadius="8">
+                    Background="#FF0A1116" 
+                    CornerRadius="8"
+                    BorderBrush="#FF10C5A4" 
+                    BorderThickness="0.5">
                 <DockPanel Margin="20">
                     <TextBlock Text="Terminal" 
                              Foreground="White" 
@@ -148,10 +157,11 @@
                              DockPanel.Dock="Top"
                              Margin="0,0,0,20"/>
                     <TextBox x:Name="terminalTextBox" 
-                            Background="#FF262626"
-                            Foreground="#FF00FFB3" 
+                            Background="#FF001c19"
+                            Foreground="#FF10C5A4" 
                             FontFamily="Consolas"
-                            BorderThickness="0"
+                            BorderThickness="0.5"
+                            BorderBrush="#FF10C5A4"
                             Padding="10"
                             IsReadOnly="True" 
                             TextWrapping="Wrap"
