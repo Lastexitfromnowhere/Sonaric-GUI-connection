@@ -2,7 +2,7 @@
   
 [![Website](https://img.shields.io/badge/Website-sonaric.xyz-blue)](https://sonaric.xyz)
 
-<img src="https://sonaric.xyz/__og-image__/image/og.png" width="800" alt="Sonaric Banner">
+<img src="https://sonaric.xyz/__og-image__/image/og.png" width="400" alt="Sonaric Banner">
 
 [![Discord](https://img.shields.io/badge/Join-Discord-7289DA)](https://discord.gg/sonaric)
 
