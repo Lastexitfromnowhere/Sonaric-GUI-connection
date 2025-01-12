@@ -1,4 +1,14 @@
-==>  https://sonaric.xyz <==
+<div align="center">
+  
+[![Website](https://img.shields.io/badge/Website-sonaric.xyz-blue)](https://sonaric.xyz)
+[![GitHub Stars](https://img.shields.io/github/stars/sonaric/sonaric?style=social)](https://github.com/sonaric/sonaric)
+[![Discord](https://img.shields.io/badge/Join-Discord-7289DA)](https://discord.gg/sonaric)
+
+**Empowering the Next Generation of Decentralized Infrastructure**
+
+[Website](https://sonaric.xyz) • [Documentation](https://docs.sonaric.xyz) • [Community](https://discord.gg/sonaric)
+
+</div>
 # 🌐 Sonaric GUI connection 
 
 ## 🚀 Overview
