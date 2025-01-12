@@ -1,7 +1,9 @@
 <div align="center">
   
 [![Website](https://img.shields.io/badge/Website-sonaric.xyz-blue)](https://sonaric.xyz)
-[![GitHub Stars](https://img.shields.io/github/stars/sonaric/sonaric?style=social)](https://github.com/sonaric/sonaric)
+
+<img src="https://sonaric.xyz/__og-image__/image/og.png" width="800" alt="Sonaric Banner">
+
 [![Discord](https://img.shields.io/badge/Join-Discord-7289DA)](https://discord.gg/sonaric)
 
 **Empowering the Next Generation of Decentralized Infrastructure**
