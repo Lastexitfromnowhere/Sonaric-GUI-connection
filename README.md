@@ -46,7 +46,7 @@ Sonaric Sonaric GUI connection is a powerful, user-friendly SSH tunneling applic
 
 1. Clone the repository
 ```bash
-git clone https://github.com/Lastexitfromnowhere/TunnelManager.git
+git clone https://github.com/Lastexitfromnowhere/Sonaric-GUI-connection.git
 ```
 
 2. Navigate to the project directory
