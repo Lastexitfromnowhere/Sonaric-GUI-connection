@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows;
@@ -77,14 +77,14 @@ namespace TunnelManager
                     string.IsNullOrWhiteSpace(username) || 
                     string.IsNullOrWhiteSpace(password))
                 {
-                    LogToTerminal("Erreur: Veuillez remplir tous les champs");
+                    LogToTerminal("Error: Please fill in all fields");
                     return;
                 }
 
                 ConnectButton.IsEnabled = false;
-                LogToTerminal("Tentative de connexion...");
+                LogToTerminal("Attempting connection...");
 
-                // Configuration SSH
+                // SSH Configuration
                 var connectionInfo = new ConnectionInfo(host, username,
                     new PasswordAuthenticationMethod(username, password));
 
@@ -107,7 +107,7 @@ namespace TunnelManager
                         forwardedPort.Start();
                         
                         Dispatcher.Invoke(() =>
-                            LogToTerminal($"Port {port} tunnelisé avec succès")
+                            LogToTerminal($"Port {port} tunneled successfully")
                         );
                     }
                 });
@@ -115,8 +115,8 @@ namespace TunnelManager
                 if (sshClient.IsConnected)
                 {
                     isConnected = true;
-                    LogToTerminal("Connexion établie avec succès");
-                    ConnectButton.Content = "Déconnecter";
+                    LogToTerminal("Connection established successfully");
+                    ConnectButton.Content = "Disconnect";
                     
                     Process.Start(new ProcessStartInfo
                     {
@@ -127,9 +127,9 @@ namespace TunnelManager
             }
             catch (Exception ex)
             {
-                LogToTerminal($"Erreur: {ex.Message}");
-                MessageBox.Show($"Erreur de connexion: {ex.Message}", 
-                              "Erreur", 
+                LogToTerminal($"Error: {ex.Message}");
+                MessageBox.Show($"Connection error: {ex.Message}", 
+                              "Error", 
                               MessageBoxButton.OK, 
                               MessageBoxImage.Error);
             }
@@ -146,12 +146,12 @@ namespace TunnelManager
                 sshClient?.Disconnect();
                 sshClient?.Dispose();
                 isConnected = false;
-                ConnectButton.Content = "Se connecter";
-                LogToTerminal("Déconnexion effectuée");
+                ConnectButton.Content = "Connect";
+                LogToTerminal("Disconnection completed");
             }
             catch (Exception ex)
             {
-                LogToTerminal($"Erreur lors de la déconnexion: {ex.Message}");
+                LogToTerminal($"Error during disconnection: {ex.Message}");
             }
         }
 
