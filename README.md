@@ -1,3 +1,4 @@
+==>  https://sonaric.xyz <==
 # 🌐 Sonaric GUI connection 
 
 ## 🚀 Overview
@@ -77,5 +78,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - Twitter: [@brand_exit](https://x.com/brand_exit)
 
 ---
+Sonaric: Empower your compute with Sonar, an intelligent AI agent that optimizes, manages, and allocates your resources across networks in real-time. Join the largest compute network, install the app on any platform (Windows, Linux, macOS), and start earning effortlessly with automated setup and rewards. Turbocharge your performance with Sonaric!  https://sonaric.xyz
 
 **Made with ❤️ by a fan **
